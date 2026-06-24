@@ -1,0 +1,10 @@
+[package]
+name = "photorescue-logging"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+chrono.workspace = true
+thiserror.workspace = true
+

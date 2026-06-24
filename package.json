@@ -1,0 +1,20 @@
+{
+  "name": "photorescue",
+  "private": true,
+  "description": "Desktop app for read-only image recovery from Windows volumes.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WillGabrielc137/PhotoRescue.git"
+  },
+  "workspaces": [
+    "apps/desktop"
+  ],
+  "scripts": {
+    "dev": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/dev.ps1",
+    "build": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build.ps1",
+    "package": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/package.ps1",
+    "create-shortcut": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/create-shortcut.ps1",
+    "frontend:test": "npm --workspace @photorescue/desktop run test"
+  }
+}

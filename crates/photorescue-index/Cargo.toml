@@ -1,0 +1,13 @@
+[package]
+name = "photorescue-index"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+chrono.workspace = true
+photorescue-domain = { path = "../photorescue-domain" }
+rusqlite.workspace = true
+thiserror.workspace = true
+uuid.workspace = true
+

@@ -1,0 +1,11 @@
+[package]
+name = "photorescue-platform"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+fs2.workspace = true
+photorescue-domain = { path = "../photorescue-domain" }
+thiserror.workspace = true
+

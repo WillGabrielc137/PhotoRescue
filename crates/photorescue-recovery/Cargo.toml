@@ -1,0 +1,15 @@
+[package]
+name = "photorescue-recovery"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+photorescue-domain = { path = "../photorescue-domain" }
+sha2.workspace = true
+thiserror.workspace = true
+uuid.workspace = true
+
+[dev-dependencies]
+tempfile = "3"
+

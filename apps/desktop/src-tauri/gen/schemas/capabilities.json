@@ -1,0 +1,1 @@
+{"default":{"identifier":"default","description":"Permissões mínimas da janela principal do PhotoRescue","local":true,"windows":["main"],"permissions":["core:default","dialog:allow-open"]}}

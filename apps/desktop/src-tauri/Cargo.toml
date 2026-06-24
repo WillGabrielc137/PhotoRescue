@@ -1,0 +1,31 @@
+[package]
+name = "photorescue-desktop"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+name = "photorescue_desktop_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[[bin]]
+name = "PhotoRescue"
+path = "src/main.rs"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+base64.workspace = true
+chrono.workspace = true
+photorescue-domain = { path = "../../../crates/photorescue-domain" }
+photorescue-index = { path = "../../../crates/photorescue-index" }
+photorescue-logging = { path = "../../../crates/photorescue-logging" }
+photorescue-platform = { path = "../../../crates/photorescue-platform" }
+photorescue-recovery = { path = "../../../crates/photorescue-recovery" }
+photorescue-scanner = { path = "../../../crates/photorescue-scanner" }
+serde.workspace = true
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+uuid.workspace = true
+

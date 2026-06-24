@@ -1,0 +1,71 @@
+# Dependencies
+node_modules/
+apps/*/node_modules/
+
+# Rust and Tauri build output
+target/
+apps/*/src-tauri/target/
+
+# Frontend build output
+dist/
+build/
+apps/*/dist/
+apps/*/build/
+
+# Local PhotoRescue scan/recovery output
+PhotoRescue/scan-*/
+scan-*/
+logs/
+Logs/
+recovered/
+Recovered/
+recovery-output/
+recovery_output/
+output/
+outputs/
+Recuperados_Integralmente/
+Recuperados_Parcialmente/
+Possivelmente_Corrompidos/
+
+# Disk/card images and raw dumps
+*.img
+*.bin
+*.dd
+*.raw
+*.iso
+
+# Local databases and logs
+*.log
+*.sqlite
+*.sqlite3
+*.sqlite-shm
+*.sqlite-wal
+*.db
+
+# Temporary and cache files
+*.tmp
+*.temp
+*.cache
+*.part
+.cache/
+.vite/
+.vite-temp/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+
+# OS, IDE and local automation files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+.codex/
+.agents/
+*.lnk

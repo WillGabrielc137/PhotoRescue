@@ -1,0 +1,15 @@
+[package]
+name = "photorescue-scanner"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+crc32fast.workspace = true
+photorescue-domain = { path = "../photorescue-domain" }
+thiserror.workspace = true
+uuid.workspace = true
+
+[dev-dependencies]
+photorescue-platform = { path = "../photorescue-platform" }
+tempfile = "3"
