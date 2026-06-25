@@ -30,6 +30,26 @@ Estado atual:
 
 > **Aviso:** este software ainda esta em desenvolvimento. Ele pode apresentar limitacoes e comportamentos inesperados. Para aumentar as chances de recuperacao, pare de usar a midia afetada antes da varredura e salve os arquivos recuperados em uma unidade diferente.
 
+## Download do executavel
+
+Os artefatos Windows gerados para esta versao estao na pasta `release/`:
+
+```text
+release/PhotoRescue.exe
+release/PhotoRescue_0.1.0_x64-setup.exe
+release/PhotoRescue_0.1.0_x64_en-US.msi
+release/checksums.sha256
+```
+
+Arquivos disponiveis:
+
+- `PhotoRescue.exe`: executavel direto, sem instalador.
+- `PhotoRescue_0.1.0_x64-setup.exe`: instalador Windows via NSIS.
+- `PhotoRescue_0.1.0_x64_en-US.msi`: instalador Windows MSI.
+- `checksums.sha256`: hashes SHA-256 para conferencia dos arquivos.
+
+Por ser um projeto em desenvolvimento, o executavel pode acionar avisos do Windows SmartScreen ou antivirus ate que o aplicativo seja assinado digitalmente.
+
 ## Funcionalidades atuais
 
 Com base no codigo atual, o PhotoRescue possui:
@@ -503,6 +523,13 @@ PhotoRescue/
     photorescue-scanner/
   docs/
     ARCHITECTURE.md
+    DEVELOPMENT.md
+    ROADMAP.md
+  release/
+    PhotoRescue.exe
+    PhotoRescue_0.1.0_x64-setup.exe
+    PhotoRescue_0.1.0_x64_en-US.msi
+    checksums.sha256
   scripts/
     build.ps1
     common.ps1
@@ -630,6 +657,7 @@ Uma versao mais organizada do roadmap esta em `docs/ROADMAP.md`.
 Este README documenta:
 
 - objetivo e status do PhotoRescue;
+- executavel e instaladores disponiveis em `release/`;
 - funcionalidades existentes no codigo atual;
 - tecnologias e dependencias reais identificadas no projeto;
 - pre-requisitos de ambiente;

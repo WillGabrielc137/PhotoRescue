@@ -12,6 +12,10 @@ build/
 apps/*/dist/
 apps/*/build/
 
+# Published binary artifacts are intentionally kept in release/.
+!release/
+!release/**
+
 # Local PhotoRescue scan/recovery output
 PhotoRescue/scan-*/
 scan-*/
